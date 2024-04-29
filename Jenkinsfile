@@ -13,8 +13,8 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                sh "docker compose down"
-                sh "docker compose up --build"
+                bat "docker compose down"
+                bat "docker compose up --build"
             }
         }
     }
